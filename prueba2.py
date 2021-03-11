@@ -28,7 +28,7 @@ def to_romano(num,sis_dec):
         elif num == 8: return datos[1]+datos[0]+datos[0]+datos[0]
         elif num == 9: return datos[0]+datos[2]
         else: return ""
-   
+
 def num_to_romano(num):
     num_romano=""
     for i in range(0,len(str(num))):
@@ -56,4 +56,6 @@ Ejecutar en consola de python
 import prueba2
 
 prueba2.tam_de_memoria("1BC-1AD")
+prueba2.tam_de_memoria("2000AD-2012AD")
+prueba2.tam_de_memoria("53BC-47BC")
 """
