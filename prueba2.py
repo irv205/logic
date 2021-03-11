@@ -17,7 +17,6 @@ def to_romano(num,sis_dec):
         elif sis_dec == 4:
             datos=[romanos[6],"Â","Ê"]
       
-        
         if num == 1: return datos[0]
         elif num == 2: return datos[0]+datos[0]
         elif num == 3: return datos[0]+datos[0]+datos[0]
@@ -50,7 +49,7 @@ def tam_de_memoria(rango ="753BC-747BC"):
     for i in range(ran_min,ran_max + 1 ): #print(num_to_romano(i))
         if tam < len(num_to_romano(i)) : tam =len(num_to_romano(i))
     return tam
-    
+
 """
 Ejecutar en consola de python
 import prueba2
