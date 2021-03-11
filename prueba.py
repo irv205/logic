@@ -10,5 +10,8 @@ def prueba(n,m):
 Ejecutar en consola de python
 import prueba
 
+prueba.prueba(1,1)
 prueba.prueba(2,2)
+prueba.prueba(3,1)
+prueba.prueba(3,3)
 """

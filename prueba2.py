@@ -4,7 +4,6 @@ romanos=[
         "C", "D",
         "M"
     ]
-
 #numero del 1 al 9 y sistema decimal= unidad, decena, centena, 
 #unidad de millar de modo que se indique que lugar ocupa en el numero a convertir
 def to_romano(num,sis_dec):
@@ -16,7 +15,8 @@ def to_romano(num,sis_dec):
             datos=[romanos[4],romanos[5],romanos[6]]
         elif sis_dec == 4:
             datos=[romanos[6],"Â","Ê"]
-
+      
+        
         if num == 1: return datos[0]
         elif num == 2: return datos[0]+datos[0]
         elif num == 3: return datos[0]+datos[0]+datos[0]
@@ -27,6 +27,21 @@ def to_romano(num,sis_dec):
         elif num == 8: return datos[1]+datos[0]+datos[0]+datos[0]
         elif num == 9: return datos[0]+datos[2]
         else: return ""
+
+
+"""def num_to_romano(num):
+    num_romano=""
+    for i in range(len(num)-2):
+        num_romano += to_romano(int(num[i]),(len(num)-2)-i)
+    return num_romano
+    
+  753BC-747BC =3   2000AD-2012AD =10  "1BC-1AD" =7 
+    #754 es el numero que le restas a un AC y obtienes el numero romano 
+    # 1BC en romano es 754 - 1 = año 753 romano
+    # el año 0AC y 0 DC no existe, de 1BC salta a 1AC osea que 1AC es el año 754 romano, todo esto sacado de la biblia y wikipedia
+
+    """
+   
 
 def num_to_romano(num):
     num_romano=""
@@ -49,12 +64,19 @@ def tam_de_memoria(rango ="753BC-747BC"):
     for i in range(ran_min,ran_max + 1 ): #print(num_to_romano(i))
         if tam < len(num_to_romano(i)) : tam =len(num_to_romano(i))
     return tam
+    
+   
+    
+    
+
 
 """
-Ejecutar en consola de python
+Ejecutar en consola - python3
 import prueba2
 
 prueba2.tam_de_memoria("1BC-1AD")
+prueba2.tam_de_memoria("753BC-747BC")
 prueba2.tam_de_memoria("2000AD-2012AD")
-prueba2.tam_de_memoria("53BC-47BC")
+
+Si python no te permite importar probar con abrir consola en python3
 """
