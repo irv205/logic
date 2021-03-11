@@ -16,7 +16,7 @@ def to_romano(num,sis_dec):
             datos=[romanos[4],romanos[5],romanos[6]]
         elif sis_dec == 4:
             datos=[romanos[6],"Â","Ê"]
-      
+
         if num == 1: return datos[0]
         elif num == 2: return datos[0]+datos[0]
         elif num == 3: return datos[0]+datos[0]+datos[0]
